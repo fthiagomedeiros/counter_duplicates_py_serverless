@@ -2,6 +2,9 @@ def counter_duplicates(name):
     temp_counter = {}
     output_duplicated_counter = {}
 
+    if not name.strip():
+        return {}
+
     for each_letter in name:
         if not each_letter in temp_counter.keys():
             temp_counter[each_letter] = 1
