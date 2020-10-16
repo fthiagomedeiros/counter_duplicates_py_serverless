@@ -5,7 +5,7 @@ from src.business_logic.counter_duplicates import counter_duplicates
 def counter_duplicates_handler(event, context):
     try:
         data = event['queryStringParameters']['name']
-    except:
+    except KeyError:
         return {
             "statusCode": 200,
             "body": 'please, provide query param name'
