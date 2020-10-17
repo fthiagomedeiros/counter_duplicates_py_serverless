@@ -31,7 +31,7 @@ provider:
 functions:
 
   GetDuplicates:
-    handler: src/lambda/handler.counter_duplicates_handler
+    handler: src/lambdas/handler.counter_duplicates_handler
     events:
       - http:
           method: get
