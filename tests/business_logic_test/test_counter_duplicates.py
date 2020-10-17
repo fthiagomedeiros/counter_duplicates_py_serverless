@@ -8,6 +8,7 @@ from src.business_logic.counter_duplicates import counter_duplicates
                                            ("abcd", {}),
                                            ("         ", {}),
                                            ("Brazil", {}),
+                                           ("BrazilBrazilBrazilB", {"B": 4, "r": 3, "a": 3, "z": 3, "i": 3, "l": 3}),
                                            ("", {})
                                            ])
 def test_find_duplicates(name, expected):
